@@ -1,17 +1,17 @@
 {
     "nevents": 10000,
-    "run_params": "2pt3",
-    "target_z": -4.3,
+    "run_params": "3pt7",
+    "target_z": -0.01,
     "map": 100,
     "mpid": 33.3,
     "mrhod": 60,
-    "run_number": 7984,
+    "run_number": 1194550,
     "seed": 879483,
-    "detector": "HPS-PhysicsRun2016-Pass2",
-    "filter_ecal_hit_ecut": 0.02,
+    "detector": "HPS-v2019-3pt7GeV",
+    "filter_no_cuts": true,
     "steering_files": {
-        "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairs1.lcsim",
-        "recon": "/org/hps/steering/recon/PhysicsRun2016FullRecon_Kalman_simps_noClustersRequired.lcsim"
+        "readout": "/org/hps/steering/readout/TriggerTuning2021TrigPulse.lcsim",
+        "recon": "/org/hps/steering/recon/TriggerTuning2021MCRecon_targetAt0_0_0.lcsim"
     },
     "output_files": {
         "simp_rot.slcio": "simp.slcio",

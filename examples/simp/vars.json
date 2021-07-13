@@ -1,0 +1,9 @@
+{
+    "run_params": ["3pt7"],
+    "nevents": [10000],
+    "rmap": [100], 
+    "rmpid": [33.3],
+    "rmrhod": [60],
+    "mrhod": [60, 90, 120, 150, 180, 210],
+    "numofjobseachmass": [500]
+}

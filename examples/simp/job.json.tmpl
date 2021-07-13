@@ -1,0 +1,25 @@
+{
+    "nevents": {{nevents}}, 
+    "run_params": "{{run_params}}",
+    "target_z": -0.01,
+    "ctau": 200,
+    "map": {% set map = "%0.2f"%(mrhod*rmap/rmrhod) %}{{map|float}},
+    "mpid": {% set mpid = "%0.2f"%(mrhod*rmpid/rmrhod) %}{{mpid|float}},
+    "mrhod": {{mrhod}},
+    "numofmasspoints": {{numofjobseachmass}},
+    "run_number": 1194550,
+    "seed": {{job_id + 1000000}}, 
+    "detector": "HPS-v2019-3pt7GeV",
+    "filter_no_cuts": true,
+    "steering_files": {
+        "readout": "/org/hps/steering/readout/TriggerTuning2021TrigPulse.lcsim",
+        "recon": "/org/hps/steering/recon/TriggerTuning2021MCRecon_targetAt0_0_0.lcsim"
+    },
+    "output_files": {
+        "simp.lhe.gz": "lhe/{{run_params}}/{{mrhod}}/simp_{{(job_id-1)%numofjobseachmass+1}}.lhe.gz",
+        "simp_rot.stdhep": "stdhep/{{run_params}}/{{mrhod}}/simp_{{(job_id-1)%numofjobseachmass+1}}.stdhep",
+        "simp_rot.slcio": "slic/{{run_params}}/{{mrhod}}/simp_{{(job_id-1)%numofjobseachmass+1}}.slcio",
+        "simp_rot_filt_readout_recon.slcio": "recon/{{run_params}}/{{mrhod}}/simp_recon_{{(job_id-1)%numofjobseachmass+1}}.slcio"
+    },
+    "output_dir": "/cache/hallb/hps/production/mcData/future/pass0"
+}
